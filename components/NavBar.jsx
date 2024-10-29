@@ -54,6 +54,11 @@ export default function NavBar() {
     localStorage.removeItem("user");
     router.reload();
   };
+  
+  const toggleNightMode = () => {
+    setNightMode((prevMode) => !prevMode);
+  };
+
 
   const handleLogin = () => {
     router.push("/auth/login");
